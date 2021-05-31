@@ -5,7 +5,7 @@ apply plugin: 'checkstyle'
 apply plugin: 'maven-publish'
 
 group = 'io.automation'
-version = '1.1.0'
+version = '1.0.2'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -46,7 +46,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = "https://maven.pkg.github.com/AdvancedAutomation/automation-service-core"
+            url = "https://maven.pkg.github.com/frankdflores/automation-service-core"
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
                 password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
